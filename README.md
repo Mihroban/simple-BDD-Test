@@ -1,2 +1,2 @@
 # simple-BDD-Test
-Summary: a simple java code example and introduction to Cucumber test without applying page object model concept 
+Summary: a simple java code example to show you how cucumber executes test scripts 
