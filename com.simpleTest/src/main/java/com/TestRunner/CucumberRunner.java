@@ -10,8 +10,8 @@ import cucumber.api.junit.Cucumber;
 		plugin = {"pretty", "html:target/cucumber-html-report"},
 		features ="features",
 		glue="com.simpleTest.steps",
-		tags = {//"@smokeTest",
-				"@test1"
+		tags = {"@smokeTest",
+				//"@test1"
 		}
 		
 		)
