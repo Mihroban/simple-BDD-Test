@@ -25,7 +25,7 @@ public class SearchSteps {
 		System.out.println("This is 1st step");
 		System.setProperty("webdriver.chrome.driver",chromeDriverPath);
 		driver = new ChromeDriver();
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.navigate().to("https://www.google.com");
 	   
@@ -47,20 +47,21 @@ public class SearchSteps {
 	    
 	}
 
-	@Then("^Verify the text is in the heading$")
-	public void verify_the_text_is_in_the_heading() throws Throwable {
-		System.out.println("This is 4th step");
-		WebElement elmTitle = driver.findElement(By.partialLinkText("Xinjiang - Wikipedia"));
-		Assert.assertTrue("Title Not Found", 
-				elmTitle.getText().equals("Xinjiang - Wikipedia"));
-		
-	}
+//	@Then("^Verify the text is in the heading$")
+//	public void verify_the_text_is_in_the_heading() throws Throwable {
+//		System.out.println("This is 4th step");
+//		WebElement elmTitle = driver.findElement(By.partialLinkText("Xinjiang - Wikipedia"));
+//		//WebElement elmTitle = driver.findElement(By.xpath("//h3[@class ='LC20lb']"));
+//		Assert.assertTrue("Title Not Found", 
+//				elmTitle.getText().equals("Xinjiang - Wikipedia"));
+//		
+//	}
 
-	@Then("^The user click on the first link$")
-	public void the_user_click_on_the_first_link() throws Throwable {
-
+	@Then("^The user click on the wiki link$")
+	public void the_user_click_on_the_wiki_link() throws Throwable {
 		Thread.sleep(3000);
-		driver.findElement(By.linkText("Xinjiang - Wikipedia")).click();
+		String xpath = "//h3[.='Xinjiang - Wikipedia']";
+		driver.findElement(By.xpath(xpath)).click();
 	    
 	}
 
