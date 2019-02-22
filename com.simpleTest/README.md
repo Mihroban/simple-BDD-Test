@@ -40,7 +40,7 @@ Cucumber Gerkin keyword; Feature file; Step-definitions; Maven; run test as Juni
 
 3. Feature Files: defines application behavior using simple English text and Gerkin keyword [Given-When-Then-And](https://docs.cucumber.io/gherkin/reference/)
 
-4. pom.xml File: we will manage/maintain all dependencies in pom.xml file provided by Maven. To add any dependencies/libraries in pom.xml file, just visit [Maven Center Repository](https://mvnrepository.com/) to search the dependency and copy it to pom.xml file.  
+4. pom.xml File: we will manage/maintain all dependencies in pom.xml file provided by Maven. To add any dependencies/libraries in pom.xml file, just visit [Maven Center Repository](https://mvnrepository.com/) to search the dependency and copy it to pom.xml file. For example, we need to at least add dependencies for selenium, cucumber, junit. 
 
 
 
